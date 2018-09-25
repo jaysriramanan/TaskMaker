@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tasks</string>
+    <string name="action_settings">Settings</string>
+    <string name="sort_by">Sort By</string>
+    <string name="new_task">New Task</string>
+    <string name="add_details">Details</string>
+    <string name="add_a_subtask">SubTask</string>
+</resources>

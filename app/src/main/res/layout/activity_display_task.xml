@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        tools:context=".DisplayTask"
+        android:id="@+id/dispTaskLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/min_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/min_margin"
+                android:paddingEnd="@dimen/fab_margin"
+                android:text="Title"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:id="@+id/dispTaskName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/min_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/min_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:layout_margin="@dimen/min_margin"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:id="@+id/dispTaskDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/min_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textColor="@color/secondaryText"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/min_margin">
+
+            <ImageView
+                android:id="@+id/dispDateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/min_margin"
+                android:layout_marginTop="@dimen/min_margin"
+                android:contentDescription="Due Date"
+                app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+            <TextView
+                android:id="@+id/dispDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/min_margin"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textSize="@dimen/text_size"
+                android:paddingTop="4dp"
+                android:textColor="@color/secondaryText"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subTaskButton"
+            android:background="@color/colorWhite"
+            android:contentDescription="@string/add_a_subtask"
+            android:textColor="#FFFF"
+            android:src="@drawable/ic_sub_task"
+            android:layout_margin="@dimen/fab_margin"/>
+
+    </LinearLayout>
+
+</ScrollView>
